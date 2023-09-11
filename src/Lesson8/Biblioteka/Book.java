@@ -9,10 +9,18 @@ public class Book implements Comparable<Book> {
 
 
 
-    Book(int id, String title, String author){
+    public Book(int id, String title, String author){
         this.id = id;
         this.title = title;
         this.author = author;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     @Override
@@ -28,4 +36,5 @@ public class Book implements Comparable<Book> {
                 ", author='" + author + '\'' +
                 '}';
     }
+
 }
